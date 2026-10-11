@@ -12,7 +12,7 @@ class GitHub {
   }
 
   authorization_url(scope = "") {
-    return `${authorize_url}?client_id=${this.client_id}&client_secret=${this.client_secret}&scope=${scope}`;
+    return `${authorize_url}?client_id=${this.client_id}&scope=${scope}`;
   }
 
   async get_token(code) {
